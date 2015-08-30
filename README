@@ -1,0 +1,22 @@
+AUTHOR
+------
+Salman Awan
+
+INTRODUCTION
+------------
+This folder contains the submission for Project 1 of the Udacity Full Stack Devleoper Nanodegree. This project contains server-side code to serve a list of my favorite movies as a web page, allowing visitors to view the details of the movies and watch their trailers.
+
+REQUIREMENTS
+------------
+This project requires:
+* Python 2.7 (or higher)
+* Any web browser
+ 
+ HOW TO RUN
+------------
+ After unzipping the project sumbission, open a Command Prompt window and change directory to the folder where you unzipped the project. Then run the following command:
+ 
+ python project1.py
+ 
+ This will run the code and display the output webpage in your default web browser.
+ 
