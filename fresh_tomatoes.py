@@ -87,7 +87,7 @@ main_page_head = '''
         });
     </script>
 </head>
-'''
+'''  # noqa
 
 
 # The main page layout and title bar
@@ -123,7 +123,7 @@ main_page_content = '''
     </div>
   </body>
 </html>
-'''
+'''  # noqa
 
 
 # A single media entry html template
@@ -136,7 +136,7 @@ movie_tile_content = '''
     <p><b>Release Date:</b> {movie_release_date}</p>
   </div>
 </div>
-'''
+'''  # noqa
 
 
 def create_movie_tiles_content(movies):
@@ -156,8 +156,8 @@ def create_movie_tiles_content(movies):
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id,
-            movie_lead_actors=movie.lead_actors,
-            movie_release_date=movie.release_date,
+            movie_lead_actors=", ".join(movie.lead_actors),
+            movie_release_date=movie.release_date.strftime("%d %B %Y"),
             movie_story_line=movie.story_line
         )
     return content
